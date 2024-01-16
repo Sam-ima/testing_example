@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practicing</title>
+    <style>
+        form{
+            width: 60%;
+            background-color: #3a8bd7;
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            border: 1px solid black;
+            border-radius: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Arial;
+            /* align-items: center; */
+            /* justify-content: center; */
+        }
+        input{
+            border: 1px solid black;
+            border-radius: 8px;
+            min-height: 30px;
+            margin: 15px 0px;
+            padding: 5px;
+            outline: none;           
+            /* display: flex; */                    
+        }
+        #btn:hover{
+            transform: rotate(15deg);
+            transition: all 2s ease;
+            background-color: rgb(93, 11, 170);
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- STARTING FORM DESIGN -->
+    <form>
+        <label >Full Name</label>
+        <input type="text" name="name" id="n_info" value="Samima Miya" placeholder="Enter Your Name">
+        <label >Adderss</label>
+        <input type="text" name="address" id="a_info" placeholder="Enter your address" required>
+        <label >E-mail</label>
+        <input type="email" name="email" id="e_info" placeholder="example@gamil.com" required>
+        <label >Password</label>
+        <input type="password" id="p_info" name="password" required>
+        <input type="button" id="btn" name="submit" onclick="getData()"value="Submit">
+    </form>
+    <!-- END OF FORM  -->
+    <script src="formP.js"></script>
+
+</body>
+</html>
